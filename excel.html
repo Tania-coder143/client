@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <label>Enter numbers (space-separated):</label>
+        <input type="text" id="numbers">
+
+        <fieldset>
+            <legend>Choose Function</legend>
+            <label><input type="radio" name="function" value="sum" checked> AutoSum</label>
+            <label><input type="radio" name="function" value="average"> Average</label>
+            <label><input type="radio" name="function" value="max"> Max</label>
+            <label><input type="radio" name="function" value="min"> Min</label>
+        </fieldset>
+
+        <button type="button" id="calculateBtn">Calculate</button>
+        <div id="result"></div>
+    </main>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>
